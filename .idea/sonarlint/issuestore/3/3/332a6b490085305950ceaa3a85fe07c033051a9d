@@ -1,0 +1,4 @@
+
+msquid:S4488$"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ü¼™şÿÿÿÿÿ8ôµı™-
+csquid:S4684%"@Replace this persistent entity with a simple POJO or DTO object.(ˆ„Îıÿÿÿÿ8®è‘ı™-
+dsquid:UselessImportCheck"9Remove this unused import 'com.example.demo.dto.UserDto'.(€èñ8Æôçı™-
