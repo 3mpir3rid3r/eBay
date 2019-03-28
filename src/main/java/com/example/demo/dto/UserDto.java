@@ -11,8 +11,6 @@ public class UserDto {
     private String userEmail;
     private String userPassword;
     private String userBdDay;
-    private String userBdMonth;
-    private String userBdYear;
     private String userAddFirstName;
     private String userAddLastName;
     private String userAddCompany;
@@ -25,6 +23,8 @@ public class UserDto {
     private String userAdditionl;
     private String userTelephone;
     private String userMobile;
+    private String userRoll;
+    private String sessionId;
 
     public String getUserId() {
         return userId;
@@ -72,22 +72,6 @@ public class UserDto {
 
     public void setUserBdDay(String userBdDay) {
         this.userBdDay = userBdDay;
-    }
-
-    public String getUserBdMonth() {
-        return userBdMonth;
-    }
-
-    public void setUserBdMonth(String userBdMonth) {
-        this.userBdMonth = userBdMonth;
-    }
-
-    public String getUserBdYear() {
-        return userBdYear;
-    }
-
-    public void setUserBdYear(String userBdYear) {
-        this.userBdYear = userBdYear;
     }
 
     public String getUserAddFirstName() {
@@ -184,5 +168,21 @@ public class UserDto {
 
     public void setUserMobile(String userMobile) {
         this.userMobile = userMobile;
+    }
+
+    public String getUserRoll() {
+        return userRoll;
+    }
+
+    public void setUserRoll(String userRoll) {
+        this.userRoll = userRoll;
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 }

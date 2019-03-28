@@ -5,8 +5,6 @@ m
 =src/main/java/com/example/demo/controller/UserController.java,3\3\332a6b490085305950ceaa3a85fe07c033051a9d
 m
 =src/main/java/com/example/demo/controller/HomeController.java,b\a\baf9ad1f7e34e9ec2f24f1cd6eaec08fada01ecc
-`
-0src/main/java/com/example/demo/dto/SkillDto.java,7\6\760ffc7d17124a628a0ce7511080d0beccf7f2fc
 g
 7src/main/java/com/example/demo/BootDemoApplication.java,e\7\e7af5e9457b39b23320a4cd2a680fc2ccf5d5836
 m
@@ -21,3 +19,11 @@ _
 /src/main/java/com/example/demo/entity/User.java,0\9\09b6f0f3c21b231eaae64a4e00055eae4b91a5d1
 p
 @src/main/java/com/example/demo/service/impl/UserServiceimpl.java,b\0\b085ca53f0696cf4c1b33f1df57ed440a7020d8e
+`
+0src/main/java/com/example/demo/dto/LoginDto.java,a\2\a2df5f9e8d9be6a0147a1af1bf0592ecc7a46452
+f
+6src/main/java/com/example/demo/dto/UserSessionDto.java,b\d\bdd5d3549595553a0a9a770f7b80ef86a1f994e9
+g
+7src/main/java/com/example/demo/entity/UserSessions.java,2\7\2746ee0b4e09cda017b11139fc00441a26eb6bc3
+u
+Esrc/main/java/com/example/demo/repository/UserSessionsRepository.java,4\7\4710199e7f64f5fa334d5a54f06b40732dcf578b

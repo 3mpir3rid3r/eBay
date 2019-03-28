@@ -1,4 +1,11 @@
 
-msquid:S4488$"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ü¼™şÿÿÿÿÿ8ôµı™-
-csquid:S4684%"@Replace this persistent entity with a simple POJO or DTO object.(ˆ„Îıÿÿÿÿ8®è‘ı™-
-dsquid:UselessImportCheck"9Remove this unused import 'com.example.demo.dto.UserDto'.(€èñ8Æôçı™-
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ñ—‚Æøÿÿÿÿ8½¬Î›-
+dsquid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8’‘Å¤›-
+Fsquid:S00108")Either remove or fill this block of code.(”ı¾8¤ø¨Î›-
+isquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÊÎ¸øÿÿÿÿ8½¬Î›-
+isquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(äİ»šùÿÿÿÿ8½¬Î›-
+Fsquid:S00108")Either remove or fill this block of code.(”ı¾8½¬Î›-
+Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8½¬Î›-
+gsquid:UselessImportCheck"9Remove this unused import 'com.example.demo.entity.User'.(„İĞúÿÿÿÿ8¤ë ¤›-
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ü¼™şÿÿÿÿÿ8½¬Î›-
+Osquid:S1481".Remove this unused "loginUser" local variable.(Â›¶úşÿÿÿÿ8Ãšê›-

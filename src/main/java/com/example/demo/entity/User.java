@@ -22,9 +22,8 @@ public class User implements Serializable {
     private String userLastName;
     private String userEmail;
     private String userPassword;
+    @Temporal(TemporalType.DATE)
     private Date userBdDay;
-    private Date userBdMonth;
-    private Date userBdYear;
     private String userAddFirstName;
     private String userAddLastName;
     private String userAddCompany;
@@ -37,6 +36,7 @@ public class User implements Serializable {
     private String userAdditionl;
     private String userTelephone;
     private String userMobile;
+    private String userRoll;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -88,22 +88,6 @@ public class User implements Serializable {
 
     public void setUserBdDay(Date userBdDay) {
         this.userBdDay = userBdDay;
-    }
-
-    public Date getUserBdMonth() {
-        return userBdMonth;
-    }
-
-    public void setUserBdMonth(Date userBdMonth) {
-        this.userBdMonth = userBdMonth;
-    }
-
-    public Date getUserBdYear() {
-        return userBdYear;
-    }
-
-    public void setUserBdYear(Date userBdYear) {
-        this.userBdYear = userBdYear;
     }
 
     public String getUserAddFirstName() {
@@ -200,5 +184,13 @@ public class User implements Serializable {
 
     public void setUserMobile(String userMobile) {
         this.userMobile = userMobile;
+    }
+
+    public String getUserRoll() {
+        return userRoll;
+    }
+
+    public void setUserRoll(String userRoll) {
+        this.userRoll = userRoll;
     }
 }

@@ -1,3 +1,2 @@
 
-dsquid:UselessImportCheck"9Remove this unused import 'com.example.demo.dto.UserDto'.(€èñ8½³ãı™-
-hsquid:UselessImportCheck	"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8áÆÄı™-
+^squid:S2441"=Make "UserDto" serializable or don't store it in the session.(Ù—¶üÿÿÿÿ8¹“¢Ã›-

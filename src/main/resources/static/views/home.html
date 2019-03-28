@@ -1,0 +1,84 @@
+﻿<div id="mainBody">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar ================================================== -->
+            <div id="sidebar" class="span3">
+                <div class="well well-small"><a id="myCart" ui-sref="product_summary"><img
+                        src="themes/images/ico-cart.png"
+                        alt="cart">3 Items in your cart
+                    <span class="badge badge-warning pull-right">$155.00</span></a></div>
+                <ul id="sideManu" class="nav nav-tabs nav-stacked" ng-controller="SideBarController">
+                    <li class="subMenu {{$index==0?'open':''}}" ng-repeat="catergory in allCatergorys">
+                        <a> {{catergory.catergoryName}} [{{catergory.catergoryCount}}]</a>
+                        <ul style="display:{{$index==0?'block':'none'}}">
+                            <li ng-repeat="subCatergory in catergory.subCatergory">
+                                <a class="active" ui-sref="products"><i class="icon-chevron-right"></i>
+                                    {{subCatergory.catergoryName}} ({{subCatergory.catergoryCount}})
+                                </a>
+                        </ul>
+                    </li>
+                </ul>
+                <br/>
+                <div class="thumbnail">
+                    <img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
+                    <div class="caption">
+                        <h5>Panasonic</h5>
+                        <h4 style="text-align:center"><a class="btn" ui-sref="product_details"> <i
+                                class="icon-zoom-in"></i></a> <a class="btn" ui-sref="product_details">Add to <i
+                                class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a>
+                        </h4>
+                    </div>
+                </div>
+                <br/>
+                <div class="thumbnail">
+                    <img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
+                    <div class="caption">
+                        <h5>Kindle</h5>
+                        <h4 style="text-align:center"><a class="btn" ui-sref="product_details"> <i
+                                class="icon-zoom-in"></i></a> <a class="btn" ui-sref="product_details">Add to <i
+                                class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a>
+                        </h4>
+                    </div>
+                </div>
+                <br/>
+                <div class="thumbnail">
+                    <img src="themes/images/payment_methods.png" title="Bootshop Payment Methods"
+                         alt="Payments Methods">
+                    <div class="caption">
+                        <h5>Payment Methods</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar end=============================================== -->
+            <div class="span9">
+                <h4>Latest Products </h4>
+                <ul class="thumbnails" ng-controller="CarouseController">
+                    <li class="span3" ng-repeat="item in allItems">
+                        <div class="thumbnail">
+                            <a ui-sref="product_details({ inputItemIdValue: {{item.itemId}} })">
+                                <img src="themes/images/products/{{item.itemImage}}" alt=""/></a>
+                            <div class="caption">
+                                <h5>{{item.itemName}}</h5>
+                                <p>
+                                    {{item.itemDiscriptionSmall | lowercase}}
+                                </p>
+
+                                <h4 style="text-align:center">
+                                    <a class="btn"
+                                       ui-sref="product_details({ inputItemIdValue: {{item.itemId}} })">
+                                        <i class="icon-zoom-in"></i>
+                                    </a>
+                                    <a class="btn"
+                                       ui-sref="product_details({ inputItemIdValue: {{item.itemId}} })">
+                                        Add to <i class="icon-shopping-cart"></i>
+                                    </a>
+                                    <a class="btn btn-primary" href="#">$&nbsp;{{item.itemPrice}}</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
